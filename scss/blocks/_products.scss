@@ -1,0 +1,122 @@
+.products {
+    margin: 0px 0 95px 0;
+    position: relative;
+
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        margin: 96px 0 0 0;
+     }
+     
+    &__description {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $lightgrey;
+        margin: 0 0 23px 0;
+    }
+    
+    &__items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 18px 0;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: 15px 0 15px 0;  
+    }
+    
+    &__illustration {
+        position: relative;
+    }
+    
+    &__picture {
+       display: block;
+    }
+    
+    &__hidden-link {
+       display: none;
+    }
+    
+    
+    &__illustration:hover .products__hidden-link {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: $gray;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    &__tobasket-link {
+        border: 2px solid $white;
+        padding: 10px 13px;
+        text-decoration: none;
+        color: $white;    
+        vertical-align: center;
+        display: flex;
+        align-items: center;
+    } 
+    
+    &__tobasket-img {
+        margin: 0 11px 0 0;
+    }
+    
+    &__picture {
+        width: 100%;
+    }
+    
+    &__information {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 24px 16px 20px 16px;   
+        background: $lightblue;
+    }
+    
+    &__name {
+        font-style: normal;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+    
+    &__desc {
+        color: var(--lightgrey);
+        padding: 12px 0 18px 0;
+        font-weight: 300;
+    }
+    
+    &__price {
+        color: $pink;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    &__button {
+        display: inline-block;
+        margin: 23px auto;
+        background-color: $pink;
+        color: $white;
+        padding: 13px 38px;
+        border: 2px solid $pink;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    
+    &__button:hover {
+        background: transparent;
+        color: $pink;
+    }
+     
+ }
+ 
+ 

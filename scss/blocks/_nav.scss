@@ -1,0 +1,60 @@
+.nav {
+    position: absolute;
+    display: none;
+    background-color: $white;
+    top: 0;
+    right: 0;
+    min-width: 320px;
+    padding: 37px 34px;
+    min-height: 100%;
+    box-shadow: 0 0 40px $lightgrey;
+
+    &__active {
+        display: block;
+        z-index: 10;
+    }
+    
+    &__cross {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 12px;
+        transition: .1s;
+    }
+    
+    &__cross:hover {
+        transform: scale(1.5);
+        transition: .1s;
+    }
+    
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $black;
+    }
+    
+    &__item{
+        color: $pink;
+        text-transform: uppercase;
+        margin: 24px 0 0 0;
+    }
+    
+    &__sub-items {
+        margin: 0 0 0 20px;
+    }
+    
+    &__sub-item {
+        color: $mediumgray;
+        margin: 12px 0 0 0;
+        text-transform: none;
+        line-height: 12px;  
+    }
+    
+    &__sub-item:hover {
+        color: $black;
+        cursor: pointer;
+    }
+}
+

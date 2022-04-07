@@ -1,0 +1,40 @@
+.preview {
+    display: flex;
+    align-items: center;
+    background: #F1E4E6;
+    position: relative;
+
+    &__img {
+        background-color: rgba(240, 248, 255, 0.089);
+     }
+     
+    &__picture {
+        display: block;
+    }
+    
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        border-left: 12px solid $pink;
+        padding-left: 16px;
+        margin: 0 0 0 63px;
+    }
+    
+    &__subtitle {
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        font-weight: normal;
+    }
+    
+    &__subtitle-pink {
+        color: $pink;
+    }
+
+ }
+ 
+ 
+ 

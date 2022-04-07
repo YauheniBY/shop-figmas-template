@@ -1,0 +1,63 @@
+.filters {
+    position: relative;
+    margin: 50px 15px 30px 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 720px;
+    align-items: center;    
+    font-size: 14px;
+    line-height: 17px;
+
+    &__filter {
+        color: $black;
+        position: relative; 
+        font-weight: 600;
+    }
+
+    &__filter:hover {
+        cursor: pointer;
+    }
+
+    &__filter::after {
+        position: absolute;
+        top: 3px;
+        right: -30px;
+        content: "";
+        background: url(../img/filter.svg) no-repeat;
+        background-size: 15px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__sub-filters {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &__sub-filters-trend, &__sub-filters-size, &__sub-filters-price {
+        margin-right: 40px;
+        position: relative;
+        color: $newgray;
+    }
+
+    &__sub-filters-trend:hover, &__sub-filters-size:hover, &__sub-filters-price:hover {
+        cursor: pointer;
+    }
+
+    &__sub-filters-trend::after, &__sub-filters-size::after, &__sub-filters-price::after {
+        position: absolute;
+        top: 7px;
+        right: -30px;
+        content: "";
+        background: url(../img/downarrow.svg) no-repeat;
+        background-size: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    
+}

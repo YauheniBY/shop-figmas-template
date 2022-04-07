@@ -1,0 +1,57 @@
+.header {
+    
+    background-color: $dark-blue;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+     }
+     
+    &__navigation{
+        display: none;
+     }
+     
+    &__logo {
+        margin: 0 10px 0 0;
+     }
+     
+    &__menu-button {
+        background: transparent;
+        border: none;
+        margin: 0 34px 0 0;
+        height: auto;   
+     
+     }
+     
+    &__person-link {
+        margin: 0 34px 0 0;        
+        display: inline-block;
+        height: auto;
+     }
+     
+    &__basket {
+        position: relative;
+    }
+
+    &__basket-num {
+        position: absolute;
+        background: $pink;
+        color: $white;
+        display: block;
+        width: 19px;
+        height: 19px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 12px;
+        line-height: 18px;
+        top: -20px;
+        right: -10px;
+    }
+
+    &__logo:hover, &__loupe:hover, &__menu-button:hover, &__person-link:hover, &__basket:hover, &__basket-num:hover  {
+        cursor: pointer;
+    }
+     
+ }

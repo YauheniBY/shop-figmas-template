@@ -1,0 +1,82 @@
+.aboutUs {
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)), url("../img/moutaines.jpg");
+    background-size: auto 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+ 
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    
+    &__autor {
+        max-width: 40%;
+        padding: 100px 30px 130px 30px;
+    }
+    
+    &__quote {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    &__autor-img {
+        max-width: 145px;
+        margin: 0 0 30px 0;
+        padding: 10px;
+    }
+    
+    &__form-title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 37px;
+        text-transform: uppercase;
+    }
+    
+    &__form-subtitle{
+        display: block;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &__form-fild {
+        display: flex;
+        justify-content: center;
+        margin: 39px 0 0 0;
+    }
+
+    &__form-input, &__form-btn {
+        margin: 0;
+        display: block;
+        height: 49px;
+    }
+
+    &__form-input {
+        width: 256px;
+        border-radius: 25px 0 0 25px;
+        padding: 6px 64px 7px 22px;
+        background: $lightergrey;
+        color: $darkbrown;
+        border: none;
+        outline: none;
+    }
+
+    &__form-btn {
+        width: 86px;
+        border-radius: 0 25px 25px 0;
+        padding: 7px 7px 5px 6px;
+        color: $white;
+        background-color: $pink;
+        border: none;
+        outline: none;
+    }
+
+    &__form-btn:hover {
+        background: #E05C6E;
+        cursor: pointer;
+    }
+ 
+ }

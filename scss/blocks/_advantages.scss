@@ -1,0 +1,30 @@
+.advantages {
+    background-color: $darkbrown;
+    color: $lightblue;
+
+    &__list {
+        display:flex;
+        flex-flow: row wrap;
+        margin: 0;
+        justify-content: space-between;
+        padding: 104px 0;
+     }
+    &__item {
+        list-style: none;
+        margin: 0;
+        max-width: 360px;
+        text-align: center;
+     }
+     
+    &__name {
+        padding: 19px 0 16px 0;
+        font-size: 19.96px;
+        line-height: 24px;
+     }
+     
+    &__desc {
+        padding: 0 20px;
+     }
+ }
+ 
+ 

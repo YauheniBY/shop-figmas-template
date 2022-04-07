@@ -37,13 +37,17 @@
       
    </header>
    <main class="main">
-      <section class="preview">
-         <div class="preview__img">
-            <img class="preview__picture" src="./img/man.png" alt="man" width="800px" height="765px">
-         </div>
-         <div class="preview__title-wrapper">
-            <h1 class="preview__title">the brand <span class="preview__subtitle">of luxerious <span class="preview__subtitle-pink">fashion</span></span></h1>
-         </div>
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__box">
+              <div class="breadcrumbs__title">New arrivals</div>
+              <div class="breadcrumbs__way">
+                  <span class="breadcrumbs__unit">Home</span>/
+                  <span class="breadcrumbs__item">Man</span>/
+                  <span class="breadcrumbs__sub-item">New arrivals</span>
+                </div>
+          </div>
+        </div>
          <nav class="nav">
             <img src="./img/vector.svg" alt="" class="nav__cross">
             <h3 class="nav__title">Menu</h3>
@@ -78,39 +82,17 @@
             </ul>         
          </nav>
       </section>
-      <section class="offers container">
-            <h2 class="visually-hidden">Offer</h2>
-            <ul class="offers__list">
-               <li class="offers__item offers__item-woman">
-                  <div>
-                     <h3 class="offers__description">30% off</h3>
-                     <p class="offers__title">for women</p>
-                  </div>                  
-               </li>
-               <li class="offers__item offers__item-man2">
-                  <div>
-                     <h3 class="offers__description">hot deal</h3>
-                     <p class="offers__title">for men</p>
-                  </div>
-               </li>
-               <li class="offers__item offers__item-child">
-                  <div>
-                     <h3 class="offers__description">new arrivals</h3>
-                     <p class="offers__title">for kids</p>
-                  </div>
-               </li>
-               <li class="offers__item offers__item-accesories">
-                  <div>
-                     <h3 class="offers__description">luxirous & trendy</h3>
-                     <p class="offers__title">accesories</p>
-                  </div>                  
-               </li>
-            </ul>
-      </section>
       <section class="products"> 
          <div class="container">
-            <h3 class="products__title">Fetured Items</h3>
-            <p class="products__description">Shop for items based on what we featured in this week </p>
+            <div class="filters">
+                <div class="filters__filter">Filter</div>
+                <div class="filters__sub-filters">
+                     <div class="filters__sub-filters-trend">Trending now</div>
+                     <div class="filters__sub-filters-size">Size</div>
+                     <div class="filters__sub-filters-price">Price</div>
+                </div>
+            </div>
+            <h3 class="products__title visually-hidden">Fetured Items</h3>
          
             <div class="products__items">
                <div class="products__item">
@@ -167,7 +149,7 @@
                </div> 
                <div class="products__item">
                   <div class="products__illustration">
-                     <img class="products__picture" src="./img/product_5.jpg" alt="product 1">
+                     <img class="products__picture" src="./img/product_7.jpg" alt="product 1">
                      <div class="products__hidden-link">
                         <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                      </div>                     
@@ -180,7 +162,7 @@
                </div>
             <div class="products__item">
                <div class="products__illustration">
-                  <img class="products__picture" src="./img/product_6.jpg" alt="product 1">
+                  <img class="products__picture" src="./img/product_8.jpg" alt="product 1">
                   <div class="products__hidden-link">
                      <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                   </div>                     
@@ -191,7 +173,45 @@
                   <p class="products__price">$52.00 </p>  
                </div>
             </div>      
-         <a href="" class="products__button">Browse All Product</a>
+            <div class="products__item">
+                <div class="products__illustration">
+                   <img class="products__picture" src="./img/product_9.jpg" alt="product 1">
+                   <div class="products__hidden-link">
+                      <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
+                   </div>                     
+                </div>
+                <div class="products__information">
+                   <h4 class="products__name">ellery x m'o capsule</h4>
+                   <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                   <p class="products__price">$52.00 </p>                 
+                </div>
+             </div>
+             <div class="products__item">
+                <div class="products__illustration">
+                   <img class="products__picture" src="./img/product_10.jpg" alt="product 1">
+                   <div class="products__hidden-link">
+                      <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
+                   </div>                     
+                </div>
+                <div class="products__information">
+                   <h4 class="products__name">ellery x m'o capsule</h4>
+                   <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                   <p class="products__price">$52.00 </p>                 
+                </div>
+             </div>
+             <div class="products__item">
+                <div class="products__illustration">
+                   <img class="products__picture" src="./img/product_11.jpg" alt="product 1">
+                   <div class="products__hidden-link">
+                      <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
+                   </div>                     
+                </div>
+                <div class="products__information">
+                   <h4 class="products__name">ellery x m'o capsule</h4>
+                   <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                   <p class="products__price">$52.00 </p>                 
+                </div>
+             </div> 
       </section>
       <section class="advantages">
          <div class="container">

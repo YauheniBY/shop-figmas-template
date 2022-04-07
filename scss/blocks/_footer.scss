@@ -1,0 +1,39 @@
+.footer {
+    background: $dark-blue;
+    color: $lightblue;
+
+    &__flexBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+    &__copy {
+        margin: 30px 10px;
+        }
+        
+    &__social-links {
+        display: flex;
+        flex-flow: row wrap;
+        }
+        
+    &__social-link {
+        display: block;
+        background-color: $white;
+        padding: 8px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin: 7px;
+        }
+        
+    &__social-link:hover {
+        background-color: $pink;
+        }
+
+    &__social-link:hover &__social-icon {
+        filter: invert(100%);
+    }
+ }
+ 
+ 

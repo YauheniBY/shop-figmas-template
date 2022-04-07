@@ -1,0 +1,42 @@
+.breadcrumbs {
+    position: relative;
+    width: 100%; 
+    background: $lightergrey;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: row wrap;
+        align-items: center;
+        background: $lightergrey;
+        width: 100%;
+        min-height: 70px;
+        padding: 60px 0;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $pink;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__way {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $newgray;
+    }
+
+    &__sub-item {
+        color: $pink;
+    }
+
+    &__unit, &__item, &__sub-item {
+        margin: 0 5px;
+    }
+
+    &__unit:hover, &__item:hover, &__sub-item:hover {
+        cursor: pointer;
+    }
+}
