@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=\, initial-scale=1.0">
-   <title>Верстка сайта по Figma макету Lesson 1</title>
+   <title>Верстка сайта по Figma макету</title>
    <link rel="stylesheet" href="./css/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,12 +85,70 @@
       <section class="products"> 
          <div class="container">
             <div class="filters">
-                <div class="filters__filter">Filter</div>
-                <div class="filters__sub-filters">
-                     <div class="filters__sub-filters-trend">Trending now</div>
-                     <div class="filters__sub-filters-size">Size</div>
-                     <div class="filters__sub-filters-price">Price</div>
+                <div class="filters__filter">Filter
+                   <div class="filters__box">
+                      <div class="filters__box-title">Filter</div>
+                      <div class="filters__box-items">
+                         <div class="filters__box-item">
+                            <div class="filters__box-item-name">Category</div>
+                            <div class="filters__box-item-links filters__box-item-links_active">
+                               <a href="#" class="filters__box-item-link">Accessories</a>
+                               <a href="#" class="filters__box-item-link">Denim</a>
+                               <a href="#" class="filters__box-item-link">Hoodies & Sweatshirts</a>
+                               <a href="#" class="filters__box-item-link">Jackets & Coats</a>
+                               <a href="#" class="filters__box-item-link">Polos</a>
+                               <a href="#" class="filters__box-item-link">Shoes</a>
+                               <a href="#" class="filters__box-item-link">Sweaters & Knits</a>
+                               <a href="#" class="filters__box-item-link">T-Shirts</a>
+                               <a href="#" class="filters__box-item-link">Tanks</a>
+                            </div>
+                         </div>
+                         <div class="filters__box-item">
+                           <div class="filters__box-item-name">Brand</div>
+                           <div class="filters__box-item-links">
+                              <a href="#" class="filters__box-item-link">NB</a>
+                              <a href="#" class="filters__box-item-link">Nike</a>
+                              <a href="#" class="filters__box-item-link">Adidas</a>
+                              <a href="#" class="filters__box-item-link">Puma</a>
+                           </div>
+                        </div>
+                        <div class="filters__box-item">
+                           <div class="filters__box-item-name">Designer</div>
+                           <div class="filters__box-item-links">
+                              <a href="#" class="filters__box-item-link">D&G</a>
+                              <a href="#" class="filters__box-item-link">Marco Covally</a>
+                              <a href="#" class="filters__box-item-link">Armany</a>
+                           </div>
+                        </div>
+                      </div>
+                   </div>
                 </div>
+                  <div class="filters__sub-filters">
+                        <div class="filters__sub-filter">Trending now
+                           <form class="filters__sub-filter-items">
+                              <label><input type="checkbox" name="trend" value="trend_1" class="filters__sub-filter-item"><span class="filters__sub-filter-span">trend_1</span></label>
+                              <label><input type="checkbox" name="trend" value="trend_2" class="filters__sub-filter-item"><span class="filters__sub-filter-span">trend_2</span></label>
+                              <label><input type="checkbox" name="trend" value="trend_3" class="filters__sub-filter-item"><span class="filters__sub-filter-span">trend_3</span></label>
+                              <label><input type="checkbox" name="trend" value="trend_4" class="filters__sub-filter-item"><span class="filters__sub-filter-span">trend_4</span></label>
+                           </form>
+                        </div>
+                        <div class="filters__sub-filter">Size
+                           <form class="filters__sub-filter-items">
+                              <label><input type="checkbox" name="size" value="XS" class="filters__sub-filter-item" checked="true"><span class="filters__sub-filter-span">XS</span></label>
+                              <label><input type="checkbox" name="size" value="S" class="filters__sub-filter-item"><span class="filters__sub-filter-span">S</span></label>
+                              <label><input type="checkbox" name="size" value="M" class="filters__sub-filter-item"><span class="filters__sub-filter-span">M</span></label>
+                              <label><input type="checkbox" name="size" value="L" class="filters__sub-filter-item"><span class="filters__sub-filter-span">L</span></label>
+                           </form>
+                        </div>
+                        <form class="filters__sub-filter">Price
+                           <div class="filters__sub-filter-items">
+                              <label><input type="checkbox" name="price" value="cheap" class="filters__sub-filter-item"><span class="filters__sub-filter-span">cheap</span></label>
+                              <label><input type="checkbox" name="price" value="comon" class="filters__sub-filter-item"><span class="filters__sub-filter-span">common</span></label>
+                              <label><input type="checkbox" name="price" value="premium" class="filters__sub-filter-item"><span class="filters__sub-filter-span">premium</span></label>
+                              <label><input type="checkbox" name="price" value="vip" class="filters__sub-filter-item"><span class="filters__sub-filter-span">vip</span></label>
+                           </div>
+                        </form>
+                  </div>
             </div>
             <h3 class="products__title visually-hidden">Fetured Items</h3>
          
@@ -110,7 +168,7 @@
                </div>
                <div class="products__item">
                   <div class="products__illustration">
-                     <img class="products__picture" src="./img/product_2.jpg" alt="product 1">
+                     <img class="products__picture" src="./img/product_12.jpg" alt="product 12">
                      <div class="products__hidden-link">
                         <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                      </div>                     
@@ -123,7 +181,7 @@
                </div>
                <div class="products__item">
                   <div class="products__illustration">
-                     <img class="products__picture" src="./img/product_3.jpg" alt="product 1">
+                     <img class="products__picture" src="./img/product_3.jpg" alt="product 3">
                      <div class="products__hidden-link">
                         <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                      </div>                     
@@ -136,7 +194,7 @@
                </div>
                <div class="products__item">
                   <div class="products__illustration">
-                     <img class="products__picture" src="./img/product_4.jpg" alt="product 1">
+                     <img class="products__picture" src="./img/product_4.jpg" alt="product 4">
                      <div class="products__hidden-link">
                         <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                      </div>                     
@@ -149,7 +207,7 @@
                </div> 
                <div class="products__item">
                   <div class="products__illustration">
-                     <img class="products__picture" src="./img/product_7.jpg" alt="product 1">
+                     <img class="products__picture" src="./img/product_7.jpg" alt="product 7">
                      <div class="products__hidden-link">
                         <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                      </div>                     
@@ -162,7 +220,7 @@
                </div>
             <div class="products__item">
                <div class="products__illustration">
-                  <img class="products__picture" src="./img/product_8.jpg" alt="product 1">
+                  <img class="products__picture" src="./img/product_8.jpg" alt="product 8">
                   <div class="products__hidden-link">
                      <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                   </div>                     
@@ -175,7 +233,7 @@
             </div>      
             <div class="products__item">
                 <div class="products__illustration">
-                   <img class="products__picture" src="./img/product_9.jpg" alt="product 1">
+                   <img class="products__picture" src="./img/product_9.jpg" alt="product 9">
                    <div class="products__hidden-link">
                       <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                    </div>                     
@@ -188,7 +246,7 @@
              </div>
              <div class="products__item">
                 <div class="products__illustration">
-                   <img class="products__picture" src="./img/product_10.jpg" alt="product 1">
+                   <img class="products__picture" src="./img/product_10.jpg" alt="product 10">
                    <div class="products__hidden-link">
                       <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                    </div>                     
@@ -201,7 +259,7 @@
              </div>
              <div class="products__item">
                 <div class="products__illustration">
-                   <img class="products__picture" src="./img/product_11.jpg" alt="product 1">
+                   <img class="products__picture" src="./img/product_11.jpg" alt="product 11">
                    <div class="products__hidden-link">
                       <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
                    </div>                     
@@ -211,7 +269,18 @@
                    <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                    <p class="products__price">$52.00 </p>                 
                 </div>
-             </div> 
+             </div>
+             <div class="pages">
+                <img src="./img/prev_arrow.svg" alt="to preview" class="pages__prev-btn">
+                <a href="" class="pages__page pages__page_active">1</a>
+                <a href="" class="pages__page">2</a>
+                <a href="" class="pages__page">3</a>
+                <a href="" class="pages__page">4</a>
+                <a href="" class="pages__page">5</a>
+                <a href="" class="pages__page">6</a>
+                <a href="" class="pages__page pages__page_last">20</a>
+                <img src="./img/next_arrow.svg" alt="to next" class="pages__next-btn">
+            </div>
       </section>
       <section class="advantages">
          <div class="container">

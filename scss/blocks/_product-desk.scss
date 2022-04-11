@@ -1,0 +1,221 @@
+.product-desk {
+    width: 100%;
+    max-width: 1140px;    
+    border: 2px solid $lightergrey;
+    min-height: 300px;
+    position: relative;
+    top: -65px;
+    margin: 0 auto 80px auto;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px;
+    text-align: center;    
+    font-weight: 300;
+
+    &__sub-title {
+        color: $pink;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto 27px auto;
+    }
+
+    &__sub-title::after {
+        content: "";
+        width: 63px;
+        height: 3px;
+        background: $pink;
+        position: absolute;
+        top: 28px;
+        left: calc(50% - 32px);
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin: 0 auto 48px auto;
+        color: $titelsgrey;
+        font-weight: 300;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 640px;
+        color:  $simplegrey;
+        margin: 0 auto 32px auto;
+    }
+
+    &__price {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto 130px auto;
+        color: $pink;
+        font-size: 24px;
+        line-height: 29px;
+        position: relative;
+    }
+
+    &__price::after {
+        content: "";
+        width: 630px;
+        height: 1px;
+        background: $lightergrey;
+        position: absolute;
+        top: 95px;
+        left: calc(50% - 320px);
+    }
+
+    &__filters {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 640px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__filter {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        padding-right: 42px;
+        position: relative;
+        margin: 0 0 48px 0;
+        color:  $simplegrey;
+        font-weight: 400;
+    }
+
+    &__filter:hover {
+        cursor: pointer;
+    }
+
+    &__filter::after {
+        content:"";
+        background: url('../img/tobottom_arrow.svg');
+        background-size: 10px;
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 6px;
+        position: absolute;
+        top: 5px;
+        right: 22px;
+    }
+
+    &__bth {
+        border: 1px solid $pink;
+        color: $pink;
+        padding: 14px 56px 14px 72px;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 auto;
+        position: relative;
+        background: none;
+        font-weight: 400;
+    }
+    
+    &__bth:hover {
+        cursor: pointer;
+        color: $darkpink;
+        border-color: $darkpink;
+    }
+
+    &__bth::before {
+        content: "";
+        width: 26px;
+        height: 24px;
+        position: absolute;
+        top: 14px;
+        left: 23px;
+        background: url('../img/basket_pink.svg');
+        background-repeat: no-repeat;
+        background-size: 26px;
+    }
+
+    &__filter-items {
+        display: none;
+        width:100%;
+        color: $mediumgrey;
+        padding: 7px;
+        box-shadow: 0 0 20px $lightergrey;
+        position: absolute;
+        top: 20px;
+        left: -10px;
+        background-color: $white;
+        text-align: left;
+        text-transform: none;
+    }
+
+    &__filter-items_active {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    &__filter-item {
+        visibility: hidden;
+    }
+
+    &__filter-item:hover {
+        cursor: pointer;;
+    }
+
+    &__filter-item_number {
+        visibility: visible;
+        width: 50px;
+    }
+
+    &__filter-span {
+        position: relative;
+    }
+
+    &__filter-span:hover {
+        cursor: pointer;
+    }
+
+    &__filter-span::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        display: block;
+        border: 1px solid $lightgrey;
+        position: absolute;
+        top: 2px;
+        left: -20px;
+        z-index: 10;
+        border-radius: 1px;
+    }
+
+    &__filter-span::after {
+        display: none;
+    }
+
+    &__filter-item:not(:disabled):active+&__filter-span::before {        
+        border: 1px solid $lightgrey;
+        background: $mediumgrey;
+    }
+
+    &__filter-item:not(:disabled):not(:checked)+&__filter-span:hover::before {
+        border: 1px solid $mediumgrey;
+    }
+
+    &__filter-item:checked+&__filter-span::after {
+        content: "✓";
+        font-size: 20px;
+        color: $mediumgrey;
+        width: 15px;
+        height: 17px;
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: -19px;
+        z-index: 9;      
+        overflow: hidden;
+    }
+
+
+
+}

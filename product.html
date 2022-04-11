@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=\, initial-scale=1.0">
+   <title>Верстка сайта по Figma макету Product</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header__wrapper">
+            <div class="header__controls">
+                  <img class="header__logo" src="./img/logo.svg" alt="logo" width="44px" height="38px">             
+                  <img class="header__loupe" src="./img/loupe.svg" alt="loupe" width="26px" height="27px">
+            </div>
+            <div class="header__controls">
+               <button class="header__menu-button">
+                  <img src="./img/menu.svg" alt="menu" width="32px" height="23px">
+               </button>
+               <a class="header__person-link">
+                  <img src="./img/user.svg" alt="user" width="29px" height="29px">
+               </a>
+               <a class="header__basket">
+                  <img src="./img/basket.svg" alt="basket" width="32px" height="29px">
+                  <span class="header__basket-num">5</span>
+               </a> 
+            </div>
+         </div>
+
+      </div>    
+      
+      
+   </header>
+   <main class="main">
+        <section class="breadcrumbs breadcrumbs_pink">
+            <div class="container">
+            <div class="breadcrumbs__box">
+            <div class="breadcrumbs__title">New arrivals</div>
+            <div class="breadcrumbs__way">
+                <span class="breadcrumbs__unit">Home</span>/
+                <span class="breadcrumbs__item">Man</span>/
+                <span class="breadcrumbs__sub-item">New arrivals</span>
+                </div>
+            </div>
+            </div>
+            <nav class="nav">
+                <img src="./img/vector.svg" alt="" class="nav__cross">
+                <h3 class="nav__title">Menu</h3>
+                <ul class="nav__items">
+                <li class="nav__item"> Man
+                    <ul class="nav__sub-items">
+                        <li class="nav__sub-item">Accessories</li>
+                        <li class="nav__sub-item">Bags</li>
+                        <li class="nav__sub-item">Denim</li>
+                        <li class="nav__sub-item">T-Shirts</li>
+                    </ul>
+                </li>
+                <li class="nav__item">Woman
+                    <ul class="nav__sub-items">
+                        <li class="nav__sub-item">Accessories</li>
+                        <li class="nav__sub-item">Jackets & Coats</li>
+                        <li class="nav__sub-item">Polos</li>
+                        <li class="nav__sub-item">T-Shirts</li>
+                        <li class="nav__sub-item">Shirts</li>
+                    </ul>
+                </li>
+                <li class="nav__item">Kids
+                    <ul class="nav__sub-items">
+                        <li class="nav__sub-item">Accessories</li>
+                        <li class="nav__sub-item">Jackets & Coats</li>
+                        <li class="nav__sub-item">Polos</li>
+                        <li class="nav__sub-item">T-Shirts</li>
+                        <li class="nav__sub-item">Shirts</li>
+                        <li class="nav__sub-item">Bags</li>
+                    </ul>
+                </li>
+                </ul>         
+            </nav>
+        </section>
+        <section class="slider">
+            <h2 class="slider__title visually-hidden">Model</h2>
+            <button class="slider__prev-btn"></button>
+            <button class="slider__next-btn"></button>
+            <div class="slider__imgs">
+                <img src="./img/slider_1.png" alt="model 1" class="slider__img slider__img_active">
+                <img src="./img/slider_2.png" alt="model 2" class="slider__img">
+                <img src="./img/slider_3.png" alt="model 3" class="slider__img">
+            </div>            
+        </section>
+        <section class="product-desk">
+            <div class="product-desk__sub-title">Women collection</div>
+            <h2 class="product-desk__title">Moschino ceap and chic</h2>
+            <p class="product-desk__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+            <span class="product-desk__price">$561</span>
+            <form action="" method="post" id="product-desk_form" class="product-desk__filters">
+                <div class="product-desk__filter">Choose color
+                    <div action="" class="product-desk__filter-items">
+                        <label>
+                            <input type="checkbox" name="Choose color" value="Red" class="product-desk__filter-item">
+                            <span class="product-desk__filter-span">Red</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Choose color" value="Blue" class="product-desk__filter-item">
+                            <span class="product-desk__filter-span">Blue</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Choose color" value="Black" class="product-desk__filter-item">
+                            <span class="product-desk__filter-span">Black</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="product-desk__filter">Choose size
+                    <div action="" class="product-desk__filter-items">
+                        <label>
+                            <input type="checkbox" name="Choose size" value="XS" class="product-desk__filter-item">
+                            <span class="product-desk__filter-span">XS</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Choose size" value="S" class="product-desk__filter-item">
+                            <span class="product-desk__filter-span">S</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Choose size" value="M" class="product-desk__filter-item">
+                            <span class="product-desk__filter-span">M</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Choose size" value="L" class="product-desk__filter-item">
+                            <span class="product-desk__filter-span">L</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="product-desk__filter">Quantity
+                    <div action="" class="product-desk__filter-items">
+                        <label>
+                            <input type="number" name="Quantity" value="1" placeholder="1" class="product-desk__filter-item product-desk__filter-item_number" min="1" max="20">
+                            <span class="">Quantity</span>
+                        </label>
+                    </div>
+                </div>
+            </form>            
+            <button tipe="submit" form="product-desk_form" class="product-desk__bth">Add to Cart</button>
+
+        </section>
+        <section class="products"> 
+            <div class="container">
+            <h3 class="products__title visually-hidden">Fetured Items</h3>
+            <p class="products__description visually-hidden">Shop for items based on what we featured in this week </p>
+
+            <div class="products__items">
+                <div class="products__item">
+                    <div class="products__illustration">
+                        <img class="products__picture" src="./img/product_4.jpg" alt="product 4">
+                        <div class="products__hidden-link">
+                        <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
+                        </div>                     
+                    </div>
+                    <div class="products__information">
+                        <h4 class="products__name">ellery x m'o capsule</h4>
+                        <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__price">$52.00 </p>               
+                    </div>                  
+                </div>
+                <div class="products__item">
+                    <div class="products__illustration">
+                        <img class="products__picture" src="./img/product_3.jpg" alt="product 3">
+                        <div class="products__hidden-link">
+                        <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
+                        </div>                     
+                    </div>
+                    <div class="products__information">
+                        <h4 class="products__name">ellery x m'o capsule</h4>
+                        <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__price">$52.00 </p>                 
+                    </div>
+                </div>
+                <div class="products__item">
+                    <div class="products__illustration">
+                        <img class="products__picture" src="./img/product_6.jpg" alt="product 6">
+                        <div class="products__hidden-link">
+                        <a class="products__tobasket-link" href="#"><img class="products__tobasket-img" src="./img/basket_2.svg" alt="basket" width="26px" height="24px"> Add to Cart</a>
+                        </div>                     
+                    </div>
+                    <div class="products__information">
+                        <h4 class="products__name">ellery x m'o capsule</h4>
+                        <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__price">$52.00 </p>                 
+                    </div>
+                </div>
+                
+            <a href="" class="products__button visually-hidden">Browse All Product</a>
+        </section>
+        <section class="aboutUs">
+            <div class="container">
+            <div class="aboutUs__box">
+                <div class="aboutUs__autor">
+                    <img src="./img/autor.png" alt="autor's photo" class="aboutUs__autor-img" width="145px" height="150px">
+                    <p class="aboutUs__quote">"Vestibulum quis porttitor dui! Quisque viverra nunc mi,<em> a pulvinar purus condimentum"</em></p>
+                </div>
+                <div class="aboutUs__form">
+                    <form action="">
+                        <h5 class="aboutUs__form-title">subscribe <span class="aboutUs__form-subtitle"> for our newletter and promotion</span></h5>
+                        <div class="aboutUs__form-fild">
+                        <input type="text" class="aboutUs__form-input" placeholder="Enter Your Email">
+                        <input type="submit" class="aboutUs__form-btn" value="Subscribe"></div>
+                    </form>
+                </div>
+
+            </div>
+            </div>
+        </section>
+   </main>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__flexBox">
+            <div class="footer__copy">
+               <p class="footer__year">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <ul class="footer__social-links">
+               <li><a href="" class="footer__social-link"><img src="./img/facebook.svg" alt="facebook" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/instagram.svg" alt="instagram" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/pinterest.svg" alt="pinterest" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/twitter.svg" alt="twitter" class="footer__social-icon"></a></li>
+            </ul>
+         </div>         
+      </div>      
+   </footer> 
+   <script src="./js/script.js"></script> 
+</body>
+</html>
+

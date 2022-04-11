@@ -4,10 +4,9 @@
     text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
     width: 100%;
-    max-width: 720px;
     align-items: center;    
     font-size: 14px;
     line-height: 17px;
@@ -16,6 +15,7 @@
         color: $black;
         position: relative; 
         font-weight: 600;
+        width: 33.333%;
     }
 
     &__filter:hover {
@@ -25,7 +25,7 @@
     &__filter::after {
         position: absolute;
         top: 3px;
-        right: -30px;
+        left: 55px;
         content: "";
         background: url(../img/filter.svg) no-repeat;
         background-size: 15px;
@@ -33,31 +33,189 @@
         height: 20px;
     }
 
+    &__box {
+        width: 360px;
+        display: none;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: space-around;
+        position: absolute;
+        top: -13px;
+        left: -15px;
+        z-index: 10;
+        background: $white;
+        box-shadow: 0 0 30px $lightergrey;
+        padding: 13px 15px;
+    }
+
+    &__box_active {
+        display: flex;
+    }
+
+    &__box-title {
+        color: $pink;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 600;
+        margin: 0 0 16px 0;
+        position: relative;
+    }
+
+    &__box-title::after {
+        position: absolute;
+        top: 3px;
+        left: 55px;
+        content: "";
+        background: url(../img/filter_pink.svg) no-repeat;
+        background-size: 15px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__box-items, &__box-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__box-item-name {
+        border-bottom: 1px solid $lightergrey;
+        border-left: 5px solid $pink;
+        padding: 11px;
+        color: $pink;        
+        margin: 16px 0;
+    }
+
+    &__box-item-links {        
+        display:none;
+        flex-direction: column;
+        margin: 8px 0 0 0;
+    }
+
+    &__box-item-links_active {
+        display: flex;
+    }
+
+    &__box-item-link {
+        color: $mediumgrey;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        text-transform: none;
+        font-weight: 400;
+        padding-left: 16px;
+        margin-bottom: 11px;
+    }
+
+    &__box-item-link:hover {
+        text-decoration: underline;
+    }
+
     &__sub-filters {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row wrap;        
+        width: 33.333%;
     }
 
-    &__sub-filters-trend, &__sub-filters-size, &__sub-filters-price {
-        margin-right: 40px;
+    &__sub-filter {
+        padding: 0 50px 0 0;
+        color: $newgrey;
+        text-align: right;
         position: relative;
-        color: $newgray;
+        text-align: right;
     }
 
-    &__sub-filters-trend:hover, &__sub-filters-size:hover, &__sub-filters-price:hover {
+    &__sub-filter:hover {
         cursor: pointer;
     }
 
-    &__sub-filters-trend::after, &__sub-filters-size::after, &__sub-filters-price::after {
+    &__sub-filter::after {
         position: absolute;
         top: 7px;
-        right: -30px;
+        right: 20px;
         content: "";
         background: url(../img/downarrow.svg) no-repeat;
         background-size: 10px;
         width: 20px;
         height: 20px;
     }
+
+    &__sub-filter-items {
+        display: none;
+        width:100%;
+        color: $mediumgrey;
+        padding: 7px;
+        box-shadow: 0 0 20px $lightergrey;
+        position: absolute;
+        top: 20px;
+        left: -10px;
+        background-color: $white;
+        text-align: left;
+        text-transform: none;
+    }
+
+    &__sub-filter-items_active {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    &__sub-filter-item {
+        visibility: hidden;
+    }
+
+    &__sub-filter-item:hover {
+        cursor: pointer;
+    }
+
+    &__sub-filter-span {
+        position: relative;
+    }
+
+    &__sub-filter-span:hover {
+        cursor: pointer;
+    }
+
+    &__sub-filter-span::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        display: block;
+        border: 1px solid $lightgrey;
+        position: absolute;
+        top: 2px;
+        left: -20px;
+        z-index: 10;
+        border-radius: 1px;
+    }
+
+    &__sub-filter-span::after {
+        display: none;
+    }
+
+    &__sub-filter-item:not(:disabled):active+&__sub-filter-span::before {        
+        border: 1px solid $lightgrey;
+        background: $mediumgrey;
+    }
+
+    &__sub-filter-item:not(:disabled):not(:checked)+&__sub-filter-span:hover::before {
+        border: 1px solid $mediumgrey;
+    }
+
+    &__sub-filter-item:checked+&__sub-filter-span::after {
+        content: "✓";
+        font-size: 20px;
+        color: $mediumgrey;
+        width: 15px;
+        height: 17px;
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: -19px;
+        z-index: 9;      
+        overflow: hidden;
+    }
+    
 
     
 }
