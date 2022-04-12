@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=\, initial-scale=1.0">
+   <title>Верстка сайта по Figma макету Cart</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header__wrapper">
+            <div class="header__controls">
+                  <img class="header__logo" src="./img/logo.svg" alt="logo" width="44px" height="38px">             
+                  <img class="header__loupe" src="./img/loupe.svg" alt="loupe" width="26px" height="27px">
+            </div>
+            <div class="header__controls">
+               <button class="header__menu-button">
+                  <img src="./img/menu.svg" alt="menu" width="32px" height="23px">
+               </button>
+               <a class="header__person-link">
+                  <img src="./img/user.svg" alt="user" width="29px" height="29px">
+               </a>
+               <a class="header__basket">
+                  <img src="./img/basket.svg" alt="basket" width="32px" height="29px">
+                  <span class="header__basket-num">5</span>
+               </a> 
+            </div>
+         </div>
+
+      </div>    
+      
+      
+   </header>
+   <main class="main">
+        <section class="breadcrumbs breadcrumbs_pink">
+            <div class="container">
+            <div class="breadcrumbs__box">
+            <div class="breadcrumbs__title">Shopping cart</div>
+            <div class="breadcrumbs__way">
+                <span class="breadcrumbs__unit">Home</span>/
+                <span class="breadcrumbs__item">Man</span>/
+                <span class="breadcrumbs__sub-item">New arrivals</span>
+                </div>
+            </div>
+            </div>
+            <nav class="nav">
+                <img src="./img/vector.svg" alt="" class="nav__cross">
+                <h3 class="nav__title">Menu</h3>
+                <ul class="nav__items">
+                <li class="nav__item"> Man
+                    <ul class="nav__sub-items">
+                        <li class="nav__sub-item">Accessories</li>
+                        <li class="nav__sub-item">Bags</li>
+                        <li class="nav__sub-item">Denim</li>
+                        <li class="nav__sub-item">T-Shirts</li>
+                    </ul>
+                </li>
+                <li class="nav__item">Woman
+                    <ul class="nav__sub-items">
+                        <li class="nav__sub-item">Accessories</li>
+                        <li class="nav__sub-item">Jackets & Coats</li>
+                        <li class="nav__sub-item">Polos</li>
+                        <li class="nav__sub-item">T-Shirts</li>
+                        <li class="nav__sub-item">Shirts</li>
+                    </ul>
+                </li>
+                <li class="nav__item">Kids
+                    <ul class="nav__sub-items">
+                        <li class="nav__sub-item">Accessories</li>
+                        <li class="nav__sub-item">Jackets & Coats</li>
+                        <li class="nav__sub-item">Polos</li>
+                        <li class="nav__sub-item">T-Shirts</li>
+                        <li class="nav__sub-item">Shirts</li>
+                        <li class="nav__sub-item">Bags</li>
+                    </ul>
+                </li>
+                </ul>         
+            </nav>
+        </section>
+        <section class="order">
+            <div class="container">
+                <div class="order__box">
+                    <div class="order__carts">
+                        <div class="order__cart">
+                            <img src="./img/product_3.jpg" alt="product 3" class="order__cart-img">
+                            <div class="order__cart-data">
+                                <div class="order__cart-name">mango people t-shirt</div>
+                                <div class="order__cart-values">
+                                    <div class="order__cart-text">Price:<span class="order__cart-price">$300</span></div>
+                                    <div class="order__cart-text">Color:<span class="order__cart-color">Red</span></div>
+                                    <div class="order__cart-text">Size:<span class="order__cart-size">xi</span></div>
+                                    <div class="order__cart-text">Quantity:<input type="number" step="1" min="1" max="27" id="order__cart-quantity" name="quantity" value="1" class="order__cart-quantity" placeholder="2"></div>
+                                </div>
+                                <div class="order__cart-cross"></div>
+                            </div>
+                        </div>
+                        <div class="order__cart">
+                            <img src="./img/product_12.jpg" alt="product 12" class="order__cart-img">
+                            <div class="order__cart-data">
+                                <div class="order__cart-name">mango people t-shirt</div>
+                                <div class="order__cart-values">
+                                    <div class="order__cart-text">Price:<span class="order__cart-price">$300</span></div>
+                                    <div class="order__cart-text">Color:<span class="order__cart-color">Red</span></div>
+                                    <div class="order__cart-text">Size:<span class="order__cart-size">xi</span></div>
+                                    <div class="order__cart-text">Quantity:<input type="number" step="1" min="1" max="27" id="order__cart-quantity" name="quantity" value="1" class="order__cart-quantity" placeholder="2"></div>
+                                </div>
+                                <div class="order__cart-cross"></div>
+                            </div>
+                        </div>
+                        <div class="order__btns">                    
+                            <button class="order__btn" id="order__clear">Clear shopping cart</button>
+                            <button class="order__btn" id="order__continue">Clear shopping cart</button>
+                        </div>
+                    </div>
+                    <div class="order__data">
+                        <form action="" class="order__data-form" method="post">
+                            <fieldset class="order__data-form-fildset">
+                                <legend class="order__data-form-legend">Shipping adress</legend>
+                                <input class="order__data-form-input" type="text" placeholder="Bangladesh" value="">
+                                <input class="order__data-form-input" type="text" placeholder="State" value="">
+                                <input class="order__data-form-input" type="text" placeholder="Podtcode / Zip" value="">
+                                <button class="order__data-form-btn">get a quote</button>
+                            </fieldset>
+                        </form>
+                        <div class="order__data-total">
+                            <div class="order__data-total-sub">sub total<span class="order__data-total-sub-value">$900</span></div>
+                            <div class="order__data-total-global">grand total<span class="order__data-total-global-value">$900</span></div>
+                            <button class="order__data-total-btn">proceed to checkout</button>
+                        </div>  
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="aboutUs">
+            <div class="container">
+            <div class="aboutUs__box">
+                <div class="aboutUs__autor">
+                    <img src="./img/autor.png" alt="autor's photo" class="aboutUs__autor-img" width="145px" height="150px">
+                    <p class="aboutUs__quote">"Vestibulum quis porttitor dui! Quisque viverra nunc mi,<em> a pulvinar purus condimentum"</em></p>
+                </div>
+                <div class="aboutUs__form">
+                    <form action="">
+                        <h5 class="aboutUs__form-title">subscribe <span class="aboutUs__form-subtitle"> for our newletter and promotion</span></h5>
+                        <div class="aboutUs__form-fild">
+                        <input type="text" class="aboutUs__form-input" placeholder="Enter Your Email">
+                        <input type="submit" class="aboutUs__form-btn" value="Subscribe"></div>
+                    </form>
+                </div>
+
+            </div>
+            </div>
+        </section>
+   </main>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__flexBox">
+            <div class="footer__copy">
+               <p class="footer__year">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <ul class="footer__social-links">
+               <li><a href="" class="footer__social-link"><img src="./img/facebook.svg" alt="facebook" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/instagram.svg" alt="instagram" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/pinterest.svg" alt="pinterest" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/twitter.svg" alt="twitter" class="footer__social-icon"></a></li>
+            </ul>
+         </div>         
+      </div>      
+   </footer> 
+   <script src="./js/script.js"></script> 
+</body>
+</html>
+
