@@ -11,76 +11,72 @@
    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
 </head>
 <body>
-   <header class="header">
-      <div class="container">
-         <div class="header__wrapper">
-            <div class="header__controls">
-                  <img class="header__logo" src="./img/logo.svg" alt="logo" width="44px" height="38px">             
-                  <img class="header__loupe" src="./img/loupe.svg" alt="loupe" width="26px" height="27px">
-            </div>
-            <div class="header__controls">
-               <button class="header__menu-button">
-                  <img src="./img/menu.svg" alt="menu" width="32px" height="23px">
-               </button>
-               <a class="header__person-link">
-                  <img src="./img/user.svg" alt="user" width="29px" height="29px">
-               </a>
-               <a class="header__basket">
-                  <img src="./img/basket.svg" alt="basket" width="32px" height="29px">
-                  <span class="header__basket-num">5</span>
-               </a> 
-            </div>
-         </div>
-
-      </div>    
-      
-      
+    <header class="header">
+        <div class="container">
+           <div class="header__wrapper">
+              <div class="header__controls">
+                 <a  href="/" target="_blank">
+                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44px" height="38px"> 
+                 </a>
+                 <a  href="/catalog.html" target="_blank">
+                    <img class="header__loupe" src="./img/loupe.svg" alt="loupe" width="26px" height="27px">
+                 </a>
+              </div>
+              <div class="header__controls">
+                 <button class="header__menu-button">
+                    <img src="./img/menu.svg" alt="menu" width="32px" height="23px">
+                 </button>
+                 <a class="header__person-link" target="_blank">
+                    <img src="./img/user.svg" alt="user" href="/registration.html" width="29px" height="29px">
+                 </a>
+                 <a class="header__basket desktop" href="/cart.html" target="_blank">
+                    <img src="./img/basket.svg" alt="basket" width="32px" height="29px">
+                    <span class="header__basket-num">5</span>
+                 </a> 
+              </div>
+           </div>  
+        </div> 
+        <nav class="nav">
+         <img src="./img/vector.svg" alt="" class="nav__cross">
+         <h3 class="nav__title">Menu</h3>
+         <ul class="nav__items">
+            <li class="nav__item"> <a href="/product.html" class="nav__item-link" target="_blank">Man</a>
+               <ul class="nav__sub-items">
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Accessories</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Bags</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Denim</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">T-Shirts</a></li>
+               </ul>
+            </li>
+            <li class="nav__item"><a href="/product.html" class="nav__item-link" target="_blank">Woman</a>
+               <ul class="nav__sub-items">
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Accessories</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Jackets & Coats</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Polos</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">T-Shirts</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Shirts</a></li>
+               </ul>
+            </li>
+            <li class="nav__item"><a href="/product.html" class="nav__item-link">Kids</a>
+               <ul class="nav__sub-items">
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Accessories</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Jackets & Coats</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Polos</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">T-Shirts</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Shirts</a></li>
+                  <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Bags</a></li>
+               </ul>
+            </li>
+         </ul>         
+      </nav> 
    </header>
    <main class="main">
         <section class="breadcrumbs breadcrumbs_pink">
             <div class="container">
-            <div class="breadcrumbs__box">
-            <div class="breadcrumbs__title">Shopping cart</div>
-            <div class="breadcrumbs__way">
-                <span class="breadcrumbs__unit">Home</span>/
-                <span class="breadcrumbs__item">Man</span>/
-                <span class="breadcrumbs__sub-item">New arrivals</span>
-                </div>
-            </div>
-            </div>
-            <nav class="nav">
-                <img src="./img/vector.svg" alt="" class="nav__cross">
-                <h3 class="nav__title">Menu</h3>
-                <ul class="nav__items">
-                <li class="nav__item"> Man
-                    <ul class="nav__sub-items">
-                        <li class="nav__sub-item">Accessories</li>
-                        <li class="nav__sub-item">Bags</li>
-                        <li class="nav__sub-item">Denim</li>
-                        <li class="nav__sub-item">T-Shirts</li>
-                    </ul>
-                </li>
-                <li class="nav__item">Woman
-                    <ul class="nav__sub-items">
-                        <li class="nav__sub-item">Accessories</li>
-                        <li class="nav__sub-item">Jackets & Coats</li>
-                        <li class="nav__sub-item">Polos</li>
-                        <li class="nav__sub-item">T-Shirts</li>
-                        <li class="nav__sub-item">Shirts</li>
-                    </ul>
-                </li>
-                <li class="nav__item">Kids
-                    <ul class="nav__sub-items">
-                        <li class="nav__sub-item">Accessories</li>
-                        <li class="nav__sub-item">Jackets & Coats</li>
-                        <li class="nav__sub-item">Polos</li>
-                        <li class="nav__sub-item">T-Shirts</li>
-                        <li class="nav__sub-item">Shirts</li>
-                        <li class="nav__sub-item">Bags</li>
-                    </ul>
-                </li>
-                </ul>         
-            </nav>
+               <div class="breadcrumbs__box">
+                  <div class="breadcrumbs__title">Shopping cart</div>
+               </div>
+            </div>            
         </section>
         <section class="order">
             <div class="container">
@@ -114,7 +110,7 @@
                         </div>
                         <div class="order__btns">                    
                             <button class="order__btn" id="order__clear">Clear shopping cart</button>
-                            <button class="order__btn" id="order__continue">Clear shopping cart</button>
+                            <button class="order__btn" id="order__continue">Continue shopping cart</button>
                         </div>
                     </div>
                     <div class="order__data">
@@ -124,7 +120,7 @@
                                 <input class="order__data-form-input" type="text" placeholder="Bangladesh" value="">
                                 <input class="order__data-form-input" type="text" placeholder="State" value="">
                                 <input class="order__data-form-input" type="text" placeholder="Podtcode / Zip" value="">
-                                <button class="order__data-form-btn">get a quote</button>
+                                <button class="order__data-form-btn">Get a quote</button>
                             </fieldset>
                         </form>
                         <div class="order__data-total">

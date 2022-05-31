@@ -1,21 +1,35 @@
 .filters {
     position: relative;
-    margin: 50px 15px 30px 15px;
+    margin: 50px 0 30px 0;
     text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row;
     width: 100%;
+    max-width: 700px;
     align-items: center;    
     font-size: 14px;
     line-height: 17px;
+
+    @include desktop {
+        margin: 50px 15px 30px 15px;
+    }
+
+    @include tablet {
+        margin: 50px 0px 30px 0px;
+    }
+
+    @include mobile {
+        font-size: 12px;
+        line-height: 14px;        
+        margin: 50px 0px 30px 0px;
+    }
 
     &__filter {
         color: $black;
         position: relative; 
         font-weight: 600;
-        width: 33.333%;
     }
 
     &__filter:hover {
@@ -31,6 +45,33 @@
         background-size: 15px;
         width: 20px;
         height: 20px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__filter::before {
+        display: none;
+
+        @include mobile {
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            content: "";
+            background: url(../img/filter.svg) no-repeat;
+            width: 38px;
+            height: 25px;
+            background-size: cover;
+        }
+    }
+
+    &__name {
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__box {
@@ -44,8 +85,13 @@
         left: -15px;
         z-index: 10;
         background: $white;
-        box-shadow: 0 0 30px $lightergrey;
-        padding: 13px 15px;
+        box-shadow: 0 0 30px $lightergrey;        
+        padding: 13px 15px 13px 15px;
+
+        @include mobile {
+            padding: 23px 15px 23px 15px;
+            top: -23px;
+        }        
     }
 
     &__box_active {
@@ -71,6 +117,26 @@
         background-size: 15px;
         width: 20px;
         height: 20px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__box-title::before {
+        display: none;
+
+        @include mobile {
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            content: "";
+            background: url(../img/filter_pink.svg) no-repeat;
+            width: 38px;
+            height: 25px;
+            background-size: cover;
+        }
     }
 
     &__box-items, &__box-item {
@@ -113,9 +179,9 @@
 
     &__sub-filters {
         display: flex;
-        flex-flow: row wrap;        
-        width: 33.333%;
+        flex-flow: row;
     }
+
 
     &__sub-filter {
         padding: 0 50px 0 0;
@@ -123,6 +189,10 @@
         text-align: right;
         position: relative;
         text-align: right;
+    }
+
+    &__sub-filter_last {
+        padding: 0 25px 0 0;
     }
 
     &__sub-filter:hover {
@@ -138,6 +208,10 @@
         background-size: 10px;
         width: 20px;
         height: 20px;
+    }
+
+    &__sub-filter_last::after {        
+        right: -5px;
     }
 
     &__sub-filter-items {

@@ -1,7 +1,7 @@
 .breadcrumbs {
     position: relative;
     width: 100%; 
-    background: $lightergrey;
+    background: $lightpink;
 
     &_pink {
         background: $lightpink;
@@ -10,11 +10,18 @@
     &__box {
         display: flex;
         justify-content: space-between;
-        flex-wrap: row wrap;
+        flex-wrap: wrap;
         align-items: center;
         width: 100%;
         min-height: 70px;
         padding: 60px 0;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 25px 0 45px 0;
+            min-height: 148px;
+            justify-content: center;
+        }
     }
 
     &__title {
@@ -29,17 +36,32 @@
         line-height: 17px;
         text-transform: uppercase;
         color: $newgrey;
+
+        @include mobile {            
+            margin-top: auto;
+        }
     }
 
     &__sub-item {
         color: $pink;
+        font-weight: 700;
+    }
+
+    &__unit-link, &__item-link {
+        color: $newgrey;
+        text-decoration: none;
+    }
+
+    &__unit-link:hover, &__item-link:hover {
+        cursor: pointer;
+        text-decoration: none;
     }
 
     &__unit, &__item, &__sub-item {
         margin: 0 5px;
     }
 
-    &__unit:hover, &__item:hover, &__sub-item:hover {
+    &__unit:hover, &__item:hover {
         cursor: pointer;
     }
 }

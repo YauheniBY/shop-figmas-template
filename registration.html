@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=\, initial-scale=1.0">
+   <title>Верстка сайта по Figma макету Cart</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           <div class="header__wrapper">
+              <div class="header__controls">
+                 <a  href="/" target="_blank">
+                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44px" height="38px"> 
+                 </a>
+                 <a  href="/catalog.html" target="_blank">
+                    <img class="header__loupe" src="./img/loupe.svg" alt="loupe" width="26px" height="27px">
+                 </a>
+              </div>
+              <div class="header__controls">
+                 <button class="header__menu-button">
+                    <img src="./img/menu.svg" alt="menu" width="32px" height="23px">
+                 </button>
+                 <a href="/registration.html" class="header__person-link" target="_blank">
+                    <img src="./img/user.svg" alt="user" width="29px" height="29px">
+                 </a>
+                 <a class="header__basket desktop" href="/cart.html" target="_blank">
+                    <img src="./img/basket.svg" alt="basket" width="32px" height="29px">
+                    <span class="header__basket-num">5</span>
+                 </a> 
+              </div>
+           </div>
+  
+        </div> 
+        <nav class="nav">
+            <img src="./img/vector.svg" alt="" class="nav__cross">
+            <h3 class="nav__title">Menu</h3>
+            <ul class="nav__items">
+               <li class="nav__item"> <a href="/product.html" class="nav__item-link" target="_blank">Man</a>
+                  <ul class="nav__sub-items">
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Accessories</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Bags</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Denim</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">T-Shirts</a></li>
+                  </ul>
+               </li>
+               <li class="nav__item"><a href="/product.html" class="nav__item-link" target="_blank">Woman</a>
+                  <ul class="nav__sub-items">
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Accessories</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Jackets & Coats</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Polos</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">T-Shirts</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Shirts</a></li>
+                  </ul>
+               </li>
+               <li class="nav__item"><a href="/product.html" class="nav__item-link">Kids</a>
+                  <ul class="nav__sub-items">
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Accessories</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Jackets & Coats</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Polos</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">T-Shirts</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Shirts</a></li>
+                     <li class="nav__sub-item"><a href="/product.html" class="nav__sub-item-link" target="_blank">Bags</a></li>
+                  </ul>
+               </li>
+            </ul>         
+         </nav> 
+    </header>
+   <main class="main">
+        <section class="breadcrumbs breadcrumbs_pink">
+            <div class="container">
+                <div class="breadcrumbs__box">
+                    <div class="breadcrumbs__title">Shopping cart</div>
+                </div>
+            </div>
+        </section>
+        <section class="regform">
+                <form action="#" method="#" class="regform__form">
+                        <label for="firstname" class="regform__label">Your Name</label>
+                        <input type="text" id="firstname" placeholder="First Name" class="regform__input">
+                        <input type="text" id="lastname" placeholder="Last Name" class="regform__input">
+                        <div class="regform__radioButtons">
+                            <input type="radio" name="gender" id="gendermale">
+                            <label for="gendermale" class="regform__radioButtons-label">Male</label>
+                            <input type="radio" name="gender" id="genderfemale">
+                            <label for="gendermale" class="regform__radioButtons-label">Female</label>
+                            <input type="radio" name="gender" id="genderother" class="regform__radioButtons-btn regform__radioButtons-btn_other">
+                            <label for="genderother" class="regform__radioButtons-label regform__radioButtons-label_other">Other</label>
+                        </div>                        
+                        <label for="email" class="regform__label">Login details</label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="regform__input">
+                        <input type="password" name="password" id="password" placeholder="Password" class="regform__input">
+                        <p class="regform__desk">
+                            Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters 
+                        </p>
+                        <button class="regform__btn" type="submit">Join now </button>
+                </form>
+                <div class="regform__ruls">
+                    <h3 class="regform__ruls-title">Loyalty has perks</h3>
+                    <div class="regform__ruls-desk">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</div>
+                    <ul class="regform__ruls-list">
+                        <li class="regform__ruls-list-item">15% off welcome offer</li>
+                        <li class="regform__ruls-list-item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="regform__ruls-list-item">$10 off a purchase on your birthday</li>
+                        <li class="regform__ruls-list-item">Early access to products</li>
+                        <li class="regform__ruls-list-item">Exclusive offers & rewards</li>
+                    </ul>
+                </div>      
+        </section>
+        <section class="aboutUs">
+            <div class="container">
+            <div class="aboutUs__box">
+                <div class="aboutUs__autor">
+                    <img src="./img/autor.png" alt="autor's photo" class="aboutUs__autor-img" width="145px" height="150px">
+                    <p class="aboutUs__quote">"Vestibulum quis porttitor dui! Quisque viverra nunc mi,<em> a pulvinar purus condimentum"</em></p>
+                </div>
+                <div class="aboutUs__form">
+                    <form action="">
+                        <h5 class="aboutUs__form-title">subscribe <span class="aboutUs__form-subtitle"> for our newletter and promotion</span></h5>
+                        <div class="aboutUs__form-fild">
+                        <input type="email" class="aboutUs__form-input" placeholder="Enter Your Email">
+                        <input type="submit" class="aboutUs__form-btn" value="Subscribe"></div>
+                    </form>
+                </div>
+
+            </div>
+            </div>
+        </section>
+   </main>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__flexBox">
+            <div class="footer__copy">
+               <p class="footer__year">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <ul class="footer__social-links">
+               <li><a href="" class="footer__social-link"><img src="./img/facebook.svg" alt="facebook" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/instagram.svg" alt="instagram" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/pinterest.svg" alt="pinterest" class="footer__social-icon"></a></li>
+               <li><a href="" class="footer__social-link"><img src="./img/twitter.svg" alt="twitter" class="footer__social-icon"></a></li>
+            </ul>
+         </div>         
+      </div>      
+   </footer> 
+   <script src="./js/script.js"></script> 
+</body>
+</html>
+

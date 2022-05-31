@@ -1,12 +1,15 @@
 .header {
     
     background-color: $dark-blue;
+    position: relative;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 75px;
+        width: 100%;
+        
      }
      
     &__navigation{
@@ -14,14 +17,18 @@
      }
      
     &__logo {
-        margin: 0 10px 0 0;
+        margin: 0 41px 0 0;
      }
      
     &__menu-button {
         background: transparent;
         border: none;
         margin: 0 34px 0 0;
-        height: auto;   
+        height: auto;
+        
+        @include mobile {
+            margin: 0;
+        }
      
      }
      
@@ -29,10 +36,16 @@
         margin: 0 34px 0 0;        
         display: inline-block;
         height: auto;
+
+        @include mobile {
+            margin: 0;
+            display: none;
+        }
      }
      
     &__basket {
         position: relative;
+        padding-right: 10px;
     }
 
     &__basket-num {
@@ -46,8 +59,8 @@
         border-radius: 50%;
         font-size: 12px;
         line-height: 18px;
-        top: -20px;
-        right: -10px;
+        top: -6px;
+        right: 0px;
     }
 
     &__logo:hover, &__loupe:hover, &__menu-button:hover, &__person-link:hover, &__basket:hover, &__basket-num:hover  {

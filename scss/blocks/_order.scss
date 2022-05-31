@@ -1,25 +1,44 @@
 .order {
-    padding: 96px 0 128px 0;
+    padding: 96px 0 64px 0;
+
+    @include tablet {
+        padding: 60px 0 64px 0;
+    }
+
+    @include mobile {
+        padding: 40px 0 36px 0;
+    }
 
     &__box {
         display: flex;
         flex-flow: row wrap;
         align-items: start;
+        justify-content: start;
     }
 
     &__carts {
-        width: 60%;
-        margin: 0 95px 0 0;
+        flex-basis: 0px;
+        margin: 0 auto 64px 0;
+        flex-grow: 1;
+        flex-shrink: 2;
     }
 
     &__cart {
-        width: 90%;
-        max-width: 652px;
-        box-shadow: 15px 15px 30px $lightergrey;
+        min-width: 650px;
+        box-shadow: 15px 15px 30px #E1E1E1;
         display: flex;
         flex-flow: row wrap;
         margin: 0 0 40px 0;
         position: relative;
+
+        @include tablet {
+            min-width: 600px;
+        }
+
+        @include mobile {
+            min-width: 320px;
+            flex-wrap: nowrap;
+        }
 
     }
 
@@ -33,6 +52,14 @@
         background: url("../img/vector.svg");
         background-size: 20px;
         background-repeat: no-repeat;
+
+        @include mobile {
+            top: 17px;
+            right: 12px;
+            width: 11px;
+            height: 11px;
+            background-size: cover;
+        }
     }
 
     &__cart-cross:hover {
@@ -42,6 +69,10 @@
     &__cart-img {
         width: auto;
         height: 306px;
+
+        @include mobile {
+            height: 188px;
+        }
     }
 
     &__cart-data {
@@ -51,6 +82,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include mobile {
+            padding: 13px 17px 38px 17px;
+        }
     }
 
     &__cart-name {
@@ -59,6 +94,12 @@
         line-height: 29px;
         font-weight: 400;
         max-width: 264px;
+
+        @include mobile {
+            font-size: 16px;
+            line-height: 19px;
+            max-width: 177px;            
+        }
     }
 
     &__cart-text {
@@ -67,6 +108,11 @@
         font-weight: 400;
         text-transform: none;
         color: $extragrey;
+
+        @include mobile {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     &__cart-price {
@@ -82,7 +128,7 @@
     }
 
     &__cart-quantity {
-        margin: 0 0 0 24px;
+        margin: 10px 0 0 24px;
         width: 44px;
         height: 25px;
         text-align: center;
@@ -116,16 +162,25 @@
     }
 
     &__btns {
-        max-width: 90%;
         display: flex;
         justify-content: space-between;
         margin: 72px 0 0 0;
+
+        @include tablet {
+            justify-content: space-around;
+        }
+
+        @include mobile {
+            justify-content: center;
+            margin: 57px 0 0 0;
+            flex-wrap: wrap;
+        }
     }
 
     &__btn {
         flex-basis: 235px;
         color: $black;
-        padding: 17px 39px;
+        padding: 17px 9px;
         font-size: 14px;
         line-height: 17px;
         font-weight: 300;
@@ -133,6 +188,14 @@
         background: none;
         text-transform: uppercase;
         font-family: Lato;
+
+        @include mobile {
+            margin: 15px 5px 0 5px;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: none;
+            font-weight: 400;
+        }
     }
 
     &__btn:hover {
@@ -142,13 +205,33 @@
 
 
     &__data {
-        width: calc(40% - 95px);
+        flex-basis: 0px;
+        flex-grow: 1;
         display: flex;
         flex-flow: row wrap;
+        justify-content: flex-end;
+        max-width: 100%;
+        margin-bottom: 64px;
+
+        @include tablet {
+            justify-content: space-around;
+            width: 100%;
+        }
     }
 
     &__data-form {
-        width: 100%;
+
+        @include tablet {
+            margin: 0 auto auto auto;
+            width: calc(50% - 15px);            
+            max-width: 360px;
+        }
+
+        @include mobile {
+            margin: 0 auto auto auto;
+            width: 100%;            
+            max-width: 360px;
+        }
     }
 
     &__data-form-fildset {
@@ -157,6 +240,16 @@
         width: 360px;
         font-weight: 300;
         align-items: flex-start;
+
+        @include tablet {
+            width: calc(100% - 15px);            
+            max-width: 360px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-width: 320px;
+        }
     }
 
     &__data-form-legend {
@@ -192,8 +285,15 @@
         padding: 9px 14px 11px 14px;
         background: none;
         border-radius: 0;
-        margin: 0 0 57px 0;
+        margin: 0 0 32px 0;
         color: $grey10;
+
+        @include mobile {            
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: none;
+            font-weight: 400;
+        }
     }
 
     &__data-form-btn:hover {
@@ -207,6 +307,18 @@
         text-transform: uppercase;
         padding: 40px 35px;
         text-align: right;
+        margin: 40px 0 auto auto;
+
+        @include tablet {
+            width: 50%;
+            max-width: 360px;
+            margin: 40px 0 auto 0;
+        }
+
+        @include mobile {
+            width: 100%;
+            max-width: 360px;
+        }
     }
 
     &__data-total-sub {
@@ -247,10 +359,12 @@
     &__data-total-btn {
         color: $white;
         background: $pink;
-        padding: 20px 40px;
+        padding: 20px 10px;
         font-family: Lato;
         text-transform: uppercase;
         width: 100%;
+        max-width: 275px;
+        margin: 0 auto;
         border: none;
     }
 

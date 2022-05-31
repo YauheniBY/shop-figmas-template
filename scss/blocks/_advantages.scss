@@ -8,12 +8,46 @@
         margin: 0;
         justify-content: space-between;
         padding: 104px 0;
+
+        @include tablet {
+            justify-content: space-around;
+        }
      }
+
     &__item {
         list-style: none;
-        margin: 0;
+        margin: 0 auto;
         max-width: 360px;
-        text-align: center;
+        text-align: center;        
+
+        @include tablet {
+            margin: 48px 100px 0px 100px;
+        }
+
+        @include mobile {
+            margin: 48px auto 0px auto;
+        }
+     }
+
+     &__item:first-of-type {
+
+        @include tablet {
+            margin-top: 0;
+        }
+
+        @include mobile {
+            margin-top: 0;
+        }         
+     }
+
+     &__item:last-of-type {
+        @include desktop {
+            margin-top: 48px;
+        }
+     }
+
+     &__img {
+        height: 32px;
      }
      
     &__name {

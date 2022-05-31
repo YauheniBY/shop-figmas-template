@@ -10,11 +10,24 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
+
+
+        @include desktop {
+            flex-direction: column;
+        }
     }
     
     &__autor {
-        max-width: 40%;
-        padding: 100px 30px 130px 30px;
+        max-width: 360px;
+        padding: 100px 0px 130px 0px;
+
+        @include desktop {
+            padding-bottom: 48px;
+        }
+
+        @include mobile {
+            padding-bottom: 58px;
+        }
     }
     
     &__quote {
@@ -33,6 +46,18 @@
         font-size: 24px;
         line-height: 37px;
         text-transform: uppercase;
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 360px;
+        @include desktop {
+            padding-bottom: 140px;
+        }
+
+        @include mobile {
+            padding-bottom: 110px;
+        }
     }
     
     &__form-subtitle{

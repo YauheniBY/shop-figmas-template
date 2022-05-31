@@ -2,12 +2,12 @@
     position: absolute;
     display: none;
     background-color: $white;
-    top: 0;
+    top: 100%;
     right: 0;
     min-width: 320px;
     padding: 37px 34px;
     min-height: 100%;
-    box-shadow: 0 0 40px $lightgrey;
+    box-shadow: 0 20px 40px $lightgrey;
 
     &__active {
         display: block;
@@ -35,10 +35,18 @@
         color: $black;
     }
     
-    &__item{
-        color: $pink;
-        text-transform: uppercase;
+    &__item{        
         margin: 24px 0 0 0;
+    }
+
+    &__item-link {
+        color: $pink;
+        text-transform: uppercase;        
+        text-decoration: none;
+    }
+    &__item-link:hover {
+        text-decoration: none;
+        color: $darkpink;
     }
     
     &__sub-items {
@@ -46,15 +54,24 @@
     }
     
     &__sub-item {
-        color: $mediumgrey;
         margin: 12px 0 0 0;
+    }
+
+    &__sub-item-link {
+        color: $mediumgrey;
         text-transform: none;
+        text-decoration: none;
         line-height: 12px;  
     }
-    
-    &__sub-item:hover {
+
+    &__sub-item-link:hover {
+        text-decoration: none;
         color: $black;
+    }
+    
+    &__sub-item:hover {       
         cursor: pointer;
     }
+
 }
 

@@ -5,18 +5,66 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 35px 0 0 0;    
+        margin: 35px 0 0 0;
+
+        @include mobile {
+            justify-content: center;
+        }
     }
 
     &__item {
-        width: 360px;
+        width: calc(100%/3 - 20px);
+        max-width: 360px;
         min-height: 260px;
         position: relative;
-        margin: 30px 0 0 0;
+        margin: 30px 0 0 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+
+        @include desktop {
+            padding: 0 15px;
+            margin: 30px 0 0 20px;
+            width: calc(100%/3 - 15px);
+        }
+
+        @include tablet {
+            min-height: 167px;
+            background-size: cover;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin: 30px auto 0 auto;
+            min-height: 260px;
+        }
+     }
+
+     &__item:first-of-type {
+        margin: 30px 0 0 0;
+
+        @include desktop {
+            margin: 30px 0 0 0;
+        }
+     }
+
+     &__item:last-of-type {
+        margin: 30px 0 0 0;
+        width: 100%;
+        max-width: 100%;
+
+        @include desktop {
+            margin: 30px 0 0 0;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        @include mobile {
+            width: 100%;
+            max-width: 360px;
+            margin: 30px auto 0 auto;
+        }
      }
      
     &__item:before {
@@ -47,8 +95,9 @@
     
     &__item-accesories {
        background-image: url('../img/acsessuares.jpg');
-       min-height: 180px;   
+       min-height: 110px;   
        flex-grow: 1;
+       background-position: center;
     }
     
     &__title, &__description {
@@ -71,5 +120,4 @@
         color: $pink;
     }
  }
- 
  

@@ -6,6 +6,10 @@
     background: $lightblue;
     border: 2px solid $lightergrey;
 
+    @include mobile {
+        height: 455px;
+    }
+
     &__prev-btn, &__next-btn {
         position: absolute;
         top: calc(50% - 24px);
@@ -14,6 +18,8 @@
         background: $lightergrey;
         border: none;
         outline: none;
+        z-index: 1;
+
     }
 
     &__prev-btn {        
@@ -67,6 +73,11 @@
         overflow: hidden;
         height: 770px;
         width: 597px;
+
+        @include mobile {
+            height: 455px;
+            width: 347px;
+        }
     }
 
     &__img {

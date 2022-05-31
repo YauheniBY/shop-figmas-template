@@ -14,6 +14,11 @@
     text-align: center;    
     font-weight: 300;
 
+    @include mobile {
+        padding: 65px 15px;
+        border: 2px solid $lightergrey1;
+    }
+
     &__sub-title {
         color: $pink;
         font-size: 14px;
@@ -58,6 +63,10 @@
         font-size: 24px;
         line-height: 29px;
         position: relative;
+
+        @include mobile {
+            margin-bottom: 84px;
+        }
     }
 
     &__price::after {
@@ -66,8 +75,13 @@
         height: 1px;
         background: $lightergrey;
         position: absolute;
-        top: 95px;
-        left: calc(50% - 320px);
+        top: 55px;
+        left: calc(50% - 315px);
+
+        @include mobile {
+            width: 174px;  
+            left: calc(50% - 87px);          
+        }
     }
 
     &__filters {
@@ -87,6 +101,16 @@
         margin: 0 0 48px 0;
         color:  $simplegrey;
         font-weight: 400;
+
+        @include mobile {
+            font-size: 10px;
+            line-height: 12px;
+            margin: 0 0 64px 0;
+        }
+    }
+
+    &__filter:last-of-type {
+        padding-right: 25px;
     }
 
     &__filter:hover {
@@ -103,6 +127,10 @@
         position: absolute;
         top: 5px;
         right: 22px;
+    }
+
+    &__filter:last-of-type::after {
+        right: 5px;
     }
 
     &__bth {

@@ -17,9 +17,9 @@ window.addEventListener('load',function(){
     if($filter){
 
         $filter.addEventListener('click', function(event){
-            if(!event.target.classList.contains('filters__box-title') && !($filter.querySelector('.filters__box').classList.contains('filters__box_active'))) {
+            if((event.target.classList.contains('filters__name') || event.target.classList.contains('filters__filter')) && !($filter.querySelector('.filters__box').classList.contains('filters__box_active'))) {
                 $filter.querySelector('.filters__box').classList.add('filters__box_active');
-            } else if(event.target.classList.contains('filters__box-title')){
+            } else if(event.target.classList.contains('filters__box-title') || event.target.classList.contains('filters__name')){
                 $filter.querySelector('.filters__box').classList.remove('filters__box_active');
             };
         });
@@ -80,7 +80,9 @@ window.addEventListener('load',function(){
 
     // ---------------- S L I D E R
 
-    new Slider('.slider');  
+    if(document.querySelector('.slider')) {
+        new Slider('.slider');  
+    }
 
 
     //   -----------   F U N C T I O N S
